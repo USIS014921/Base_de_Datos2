@@ -192,29 +192,26 @@ namespace Parcial_1_Grupo_6
                     myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
                 }
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                // string myInsertQuery = "DELETE FROM agenda Where id=" + id.Text + "";
-                // MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                // myCommand.Connection = myConnection;
-                // myConnection.Open();
-                // myCommand.ExecuteNonQuery();
-                // myCommand.Connection.Close();
-                // avisos a = new avisos();
-                // a.label1.Text = "Eliminado Con Éxito";
-                // a.ShowDialog();
-                //   string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                //  string query = "select * from agenda";
-                //  MySqlConnection cnn = new MySqlConnection(cad);
-                //  MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
-                //  System.Data.DataSet ds = new System.Data.DataSet();
-                //   da.Fill(ds, "agenda2");
-                // dataGridView1.DataSource = ds;
-                // dataGridView1.DataMember = "agenda2";
+                string myInsertQuery = "DELETE FROM agenda2 Where id=" + txtcodigo + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+               
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
+                string query = "select * from agenda2";
+                MySqlConnection cnn = new MySqlConnection(cad);
+                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "agenda2");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "agenda2";
             }
             catch (System.Exception)
             {
-             // avisos a = new avisos();
-             // a.label1.Text = "Hay Campos Vacíos";
-             // a.ShowDialog();
+                MessageBox.Show("Error al Eliminar el ususario ", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

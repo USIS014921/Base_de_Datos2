@@ -149,13 +149,13 @@ namespace Parcial_1_Grupo_6
                     myCommand.Connection.Close();
 
                     string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                    string query = "select * from agenda2";
+                    string query = "select * from agenda";
                     MySqlConnection cnn = new MySqlConnection(cad);
                     MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                     System.Data.DataSet ds = new System.Data.DataSet();
-                    da.Fill(ds, "agenda2");
+                    da.Fill(ds, "agenda");
                     dataGridView1.DataSource = ds;
-                    dataGridView1.DataMember = "agenda2";
+                    dataGridView1.DataMember = "agenda";
                 }
                 catch (System.Exception)
                 {

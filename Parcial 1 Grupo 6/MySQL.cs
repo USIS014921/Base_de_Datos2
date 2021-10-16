@@ -127,15 +127,40 @@ namespace Parcial_1_Grupo_6
         private void bmodificar_Click(object sender, EventArgs e)
         {
             {
-                txtusuario.Enabled = true;
-                txtclave.Enabled = true;
-                txtcorreo.Enabled = true;
-                txtcodigo.Enabled = true;
-                lstnivel.Enabled = true;
-                txtusuario.Focus();
-                bmodificar.Visible = false;
-                bactualizar.Visible = true;
-                
+                try
+                {
+                    string myConnectionString = "";
+                    if (myConnectionString == "")
+                    {
+                        myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
+                    }
+                    MySqlConnection myConnection = new MySqlConnection(myConnectionString);
+                    string myInsertQuery = "UPDATE agenda2 SET nombre=?nombre,codigo=?codigo, clave=?clave, nivel=?nivel, correo=?correo, Where id=" + txtcodigo.Text + "";
+                    MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+                    myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
+                    myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
+                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
+                    myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
+                    myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
+
+                    myCommand.Connection = myConnection;
+                    myConnection.Open();
+                    myCommand.ExecuteNonQuery();
+                    myCommand.Connection.Close();
+
+                    string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
+                    string query = "select * from agenda2";
+                    MySqlConnection cnn = new MySqlConnection(cad);
+                    MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                    System.Data.DataSet ds = new System.Data.DataSet();
+                    da.Fill(ds, "agenda2");
+                    dataGridView1.DataSource = ds;
+                    dataGridView1.DataMember = "agenda2";
+                }
+                catch (System.Exception)
+                {
+
+                }
             }
         }
 

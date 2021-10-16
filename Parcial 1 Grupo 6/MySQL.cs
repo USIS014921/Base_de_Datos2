@@ -110,7 +110,7 @@ namespace Parcial_1_Grupo_6
                 }
                 catch (MySqlException)
                 {
-                    MessageBox.Show("Ya existe el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El Usuario ya existe en la base de datos", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 bnuevo.Visible = true;

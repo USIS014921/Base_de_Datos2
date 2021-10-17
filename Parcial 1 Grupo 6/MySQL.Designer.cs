@@ -72,7 +72,7 @@ namespace Parcial_1_Grupo_6
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(291, 236);
+            this.bentrar.Location = new System.Drawing.Point(387, 158);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(90, 33);
             this.bentrar.TabIndex = 72;
@@ -248,7 +248,7 @@ namespace Parcial_1_Grupo_6
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(387, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 236);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(543, 257);
             this.dataGridView1.TabIndex = 75;
@@ -256,9 +256,9 @@ namespace Parcial_1_Grupo_6
             // btnbuscar
             // 
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(584, 7);
+            this.btnbuscar.Location = new System.Drawing.Point(387, 197);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(81, 36);
+            this.btnbuscar.Size = new System.Drawing.Size(90, 33);
             this.btnbuscar.TabIndex = 76;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
@@ -266,7 +266,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(420, 22);
+            this.txtbuscar.Location = new System.Drawing.Point(483, 210);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(158, 20);
             this.txtbuscar.TabIndex = 77;
@@ -320,7 +320,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
-            this.ClientSize = new System.Drawing.Size(942, 314);
+            this.ClientSize = new System.Drawing.Size(942, 548);
             this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.lblcodigo);

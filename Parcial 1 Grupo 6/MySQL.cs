@@ -32,7 +32,9 @@ namespace Parcial_1_Grupo_6
 
         private void bentrar_Click(object sender, EventArgs e)
         {
-
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
         }
 
         private void MySQL_Load(object sender, EventArgs e)
@@ -127,6 +129,12 @@ namespace Parcial_1_Grupo_6
         private void bmodificar_Click(object sender, EventArgs e)
         {
             {
+                txtusuario.Enabled = true;
+                txtclave.Enabled = true;
+                txtcorreo.Enabled = true;
+                txtcodigo.Enabled = true;
+                txtnivel.Enabled = true; 
+
                 try
                 {
                     string myConnectionString = "";
@@ -216,7 +224,7 @@ namespace Parcial_1_Grupo_6
                     myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
                 }
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string myInsertQuery = "DELETE FROM agenda2 Where id=" + txtcodigo + "";
+                string myInsertQuery = "DELETE FROM contactos Where codigo =" + txtcodigo + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                
                 myCommand.Connection = myConnection;

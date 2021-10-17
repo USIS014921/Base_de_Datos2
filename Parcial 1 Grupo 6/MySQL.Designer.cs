@@ -62,7 +62,7 @@ namespace Parcial_1_Grupo_6
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,7 +72,7 @@ namespace Parcial_1_Grupo_6
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(387, 158);
+            this.bentrar.Location = new System.Drawing.Point(396, 162);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(90, 33);
             this.bentrar.TabIndex = 72;
@@ -84,7 +84,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsalir.ForeColor = System.Drawing.Color.Black;
-            this.bsalir.Location = new System.Drawing.Point(291, 197);
+            this.bsalir.Location = new System.Drawing.Point(300, 201);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(90, 33);
             this.bsalir.TabIndex = 71;
@@ -96,7 +96,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bultimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bultimo.ForeColor = System.Drawing.Color.Black;
-            this.bultimo.Location = new System.Drawing.Point(291, 158);
+            this.bultimo.Location = new System.Drawing.Point(300, 162);
             this.bultimo.Name = "bultimo";
             this.bultimo.Size = new System.Drawing.Size(90, 33);
             this.bultimo.TabIndex = 70;
@@ -107,7 +107,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bactualizar.ForeColor = System.Drawing.Color.Black;
-            this.bactualizar.Location = new System.Drawing.Point(195, 197);
+            this.bactualizar.Location = new System.Drawing.Point(204, 201);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(90, 33);
             this.bactualizar.TabIndex = 69;
@@ -119,7 +119,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmodificar.ForeColor = System.Drawing.Color.Black;
-            this.bmodificar.Location = new System.Drawing.Point(195, 197);
+            this.bmodificar.Location = new System.Drawing.Point(204, 201);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(90, 33);
             this.bmodificar.TabIndex = 68;
@@ -131,7 +131,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bsiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsiguiente.ForeColor = System.Drawing.Color.Black;
-            this.bsiguiente.Location = new System.Drawing.Point(195, 158);
+            this.bsiguiente.Location = new System.Drawing.Point(204, 162);
             this.bsiguiente.Name = "bsiguiente";
             this.bsiguiente.Size = new System.Drawing.Size(90, 33);
             this.bsiguiente.TabIndex = 67;
@@ -142,7 +142,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beliminar.ForeColor = System.Drawing.Color.Black;
-            this.beliminar.Location = new System.Drawing.Point(99, 197);
+            this.beliminar.Location = new System.Drawing.Point(108, 201);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(90, 33);
             this.beliminar.TabIndex = 66;
@@ -154,7 +154,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.banterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.banterior.ForeColor = System.Drawing.Color.Black;
-            this.banterior.Location = new System.Drawing.Point(99, 158);
+            this.banterior.Location = new System.Drawing.Point(108, 162);
             this.banterior.Name = "banterior";
             this.banterior.Size = new System.Drawing.Size(90, 33);
             this.banterior.TabIndex = 65;
@@ -165,7 +165,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bguardar.ForeColor = System.Drawing.Color.Black;
-            this.bguardar.Location = new System.Drawing.Point(3, 197);
+            this.bguardar.Location = new System.Drawing.Point(12, 201);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(90, 33);
             this.bguardar.TabIndex = 64;
@@ -177,7 +177,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnuevo.ForeColor = System.Drawing.Color.Black;
-            this.bnuevo.Location = new System.Drawing.Point(3, 197);
+            this.bnuevo.Location = new System.Drawing.Point(12, 201);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(90, 33);
             this.bnuevo.TabIndex = 63;
@@ -189,7 +189,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bprimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bprimero.ForeColor = System.Drawing.Color.Black;
-            this.bprimero.Location = new System.Drawing.Point(3, 158);
+            this.bprimero.Location = new System.Drawing.Point(12, 162);
             this.bprimero.Name = "bprimero";
             this.bprimero.Size = new System.Drawing.Size(90, 33);
             this.bprimero.TabIndex = 62;
@@ -198,7 +198,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(269, 61);
+            this.txtclave.Location = new System.Drawing.Point(278, 65);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 61;
@@ -206,7 +206,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(269, 34);
+            this.txtusuario.Location = new System.Drawing.Point(278, 38);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 60;
@@ -217,7 +217,7 @@ namespace Parcial_1_Grupo_6
             this.lblnivel.AutoSize = true;
             this.lblnivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnivel.ForeColor = System.Drawing.Color.Black;
-            this.lblnivel.Location = new System.Drawing.Point(205, 114);
+            this.lblnivel.Location = new System.Drawing.Point(214, 118);
             this.lblnivel.Name = "lblnivel";
             this.lblnivel.Size = new System.Drawing.Size(52, 20);
             this.lblnivel.TabIndex = 59;
@@ -228,7 +228,7 @@ namespace Parcial_1_Grupo_6
             this.lblclave.AutoSize = true;
             this.lblclave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblclave.ForeColor = System.Drawing.Color.Black;
-            this.lblclave.Location = new System.Drawing.Point(202, 60);
+            this.lblclave.Location = new System.Drawing.Point(211, 64);
             this.lblclave.Name = "lblclave";
             this.lblclave.Size = new System.Drawing.Size(55, 18);
             this.lblclave.TabIndex = 58;
@@ -239,7 +239,7 @@ namespace Parcial_1_Grupo_6
             this.lblususario.AutoSize = true;
             this.lblususario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblususario.ForeColor = System.Drawing.Color.Black;
-            this.lblususario.Location = new System.Drawing.Point(187, 32);
+            this.lblususario.Location = new System.Drawing.Point(196, 36);
             this.lblususario.Name = "lblususario";
             this.lblususario.Size = new System.Drawing.Size(76, 20);
             this.lblususario.TabIndex = 57;
@@ -248,7 +248,7 @@ namespace Parcial_1_Grupo_6
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 236);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 240);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(543, 257);
             this.dataGridView1.TabIndex = 75;
@@ -256,7 +256,7 @@ namespace Parcial_1_Grupo_6
             // btnbuscar
             // 
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(387, 197);
+            this.btnbuscar.Location = new System.Drawing.Point(396, 201);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(90, 33);
             this.btnbuscar.TabIndex = 76;
@@ -266,16 +266,16 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(483, 210);
+            this.txtbuscar.Location = new System.Drawing.Point(492, 214);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(158, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(63, 20);
             this.txtbuscar.TabIndex = 77;
             // 
             // lblcorreo
             // 
             this.lblcorreo.AutoSize = true;
             this.lblcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.Location = new System.Drawing.Point(189, 85);
+            this.lblcorreo.Location = new System.Drawing.Point(198, 89);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(68, 20);
             this.lblcorreo.TabIndex = 78;
@@ -283,7 +283,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(269, 87);
+            this.txtcorreo.Location = new System.Drawing.Point(278, 91);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(100, 20);
             this.txtcorreo.TabIndex = 79;
@@ -293,7 +293,7 @@ namespace Parcial_1_Grupo_6
             this.lblcodigo.AutoSize = true;
             this.lblcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcodigo.ForeColor = System.Drawing.Color.Black;
-            this.lblcodigo.Location = new System.Drawing.Point(187, 9);
+            this.lblcodigo.Location = new System.Drawing.Point(196, 13);
             this.lblcodigo.Name = "lblcodigo";
             this.lblcodigo.Size = new System.Drawing.Size(70, 20);
             this.lblcodigo.TabIndex = 80;
@@ -302,7 +302,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtcodigo
             // 
-            this.txtcodigo.Location = new System.Drawing.Point(269, 8);
+            this.txtcodigo.Location = new System.Drawing.Point(278, 12);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(100, 20);
             this.txtcodigo.TabIndex = 81;
@@ -310,7 +310,7 @@ namespace Parcial_1_Grupo_6
             // lstnivel
             // 
             this.lstnivel.FormattingEnabled = true;
-            this.lstnivel.Location = new System.Drawing.Point(269, 112);
+            this.lstnivel.Location = new System.Drawing.Point(278, 116);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 82;
@@ -320,7 +320,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
-            this.ClientSize = new System.Drawing.Size(942, 548);
+            this.ClientSize = new System.Drawing.Size(570, 509);
             this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.lblcodigo);

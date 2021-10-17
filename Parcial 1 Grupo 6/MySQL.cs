@@ -15,7 +15,7 @@ namespace Parcial_1_Grupo_6
     public partial class MySQL : Form
     {
         public string cadena_conexion = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-
+        public string usuario_modificar;
         private object myConnection;
         private object myCommand;
 
@@ -137,7 +137,7 @@ namespace Parcial_1_Grupo_6
             txtusuario.Focus();
             bmodificar.Visible = false;
             bactualizar.Visible = true;
-            
+            usuario_modificar = ;
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -243,7 +243,7 @@ namespace Parcial_1_Grupo_6
                 string nivel =lstnivel.Text.ToString();
                 string correo =txtcorreo.Text.ToString();
 
-                string MyInsertQuery = "UPDATE contactos SET codigo = '" + codigo + "', nombre = '" + nombre + "' clave = '" + clave + "', nivel = '" + nivel + "' correo = '" + correo + "' WHERE codigo ='" + txtcodigo.Text +"'";
+                string MyInsertQuery = "UPDATE contactos SET codigo = '" + codigo + "', nombre = '" + nombre + "' clave = '" + clave + "', nivel = '" + nivel + "' correo = '" + correo + "' WHERE codigo ='" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(MyInsertQuery);
 

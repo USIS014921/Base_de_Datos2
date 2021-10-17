@@ -198,7 +198,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(278, 65);
+            this.txtclave.Location = new System.Drawing.Point(251, 69);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 61;
@@ -206,7 +206,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(278, 38);
+            this.txtusuario.Location = new System.Drawing.Point(251, 42);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 60;
@@ -217,7 +217,7 @@ namespace Parcial_1_Grupo_6
             this.lblnivel.AutoSize = true;
             this.lblnivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnivel.ForeColor = System.Drawing.Color.Black;
-            this.lblnivel.Location = new System.Drawing.Point(214, 118);
+            this.lblnivel.Location = new System.Drawing.Point(187, 122);
             this.lblnivel.Name = "lblnivel";
             this.lblnivel.Size = new System.Drawing.Size(52, 20);
             this.lblnivel.TabIndex = 59;
@@ -228,7 +228,7 @@ namespace Parcial_1_Grupo_6
             this.lblclave.AutoSize = true;
             this.lblclave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblclave.ForeColor = System.Drawing.Color.Black;
-            this.lblclave.Location = new System.Drawing.Point(211, 64);
+            this.lblclave.Location = new System.Drawing.Point(184, 68);
             this.lblclave.Name = "lblclave";
             this.lblclave.Size = new System.Drawing.Size(55, 18);
             this.lblclave.TabIndex = 58;
@@ -239,7 +239,7 @@ namespace Parcial_1_Grupo_6
             this.lblususario.AutoSize = true;
             this.lblususario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblususario.ForeColor = System.Drawing.Color.Black;
-            this.lblususario.Location = new System.Drawing.Point(196, 36);
+            this.lblususario.Location = new System.Drawing.Point(169, 40);
             this.lblususario.Name = "lblususario";
             this.lblususario.Size = new System.Drawing.Size(76, 20);
             this.lblususario.TabIndex = 57;
@@ -256,7 +256,7 @@ namespace Parcial_1_Grupo_6
             // btnbuscar
             // 
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(396, 201);
+            this.btnbuscar.Location = new System.Drawing.Point(369, 17);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(90, 33);
             this.btnbuscar.TabIndex = 76;
@@ -266,16 +266,16 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(492, 214);
+            this.txtbuscar.Location = new System.Drawing.Point(465, 30);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(63, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(90, 20);
             this.txtbuscar.TabIndex = 77;
             // 
             // lblcorreo
             // 
             this.lblcorreo.AutoSize = true;
             this.lblcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.Location = new System.Drawing.Point(198, 89);
+            this.lblcorreo.Location = new System.Drawing.Point(171, 93);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(68, 20);
             this.lblcorreo.TabIndex = 78;
@@ -283,7 +283,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(278, 91);
+            this.txtcorreo.Location = new System.Drawing.Point(251, 95);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(100, 20);
             this.txtcorreo.TabIndex = 79;
@@ -293,7 +293,7 @@ namespace Parcial_1_Grupo_6
             this.lblcodigo.AutoSize = true;
             this.lblcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcodigo.ForeColor = System.Drawing.Color.Black;
-            this.lblcodigo.Location = new System.Drawing.Point(196, 13);
+            this.lblcodigo.Location = new System.Drawing.Point(169, 17);
             this.lblcodigo.Name = "lblcodigo";
             this.lblcodigo.Size = new System.Drawing.Size(70, 20);
             this.lblcodigo.TabIndex = 80;
@@ -302,7 +302,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtcodigo
             // 
-            this.txtcodigo.Location = new System.Drawing.Point(278, 12);
+            this.txtcodigo.Location = new System.Drawing.Point(251, 16);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(100, 20);
             this.txtcodigo.TabIndex = 81;
@@ -321,7 +321,7 @@ namespace Parcial_1_Grupo_6
             "8",
             "9",
             "10"});
-            this.lstnivel.Location = new System.Drawing.Point(278, 116);
+            this.lstnivel.Location = new System.Drawing.Point(251, 120);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 82;

@@ -236,6 +236,7 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                
                 string codigo =txtcodigo.Text.ToString();
                 string nombre =txtusuario.Text.ToString();
                 string clave =txtclave.Text.ToString();

@@ -132,9 +132,12 @@ namespace Parcial_1_Grupo_6
             txtusuario.Enabled = true;
             txtclave.Enabled = true;
             lstnivel.Enabled = true;
+            txtcorreo.Enabled = true;
+            txtcodigo.Enabled = true;
             txtusuario.Focus();
             bmodificar.Visible = false;
             bactualizar.Visible = true;
+            
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -213,6 +216,8 @@ namespace Parcial_1_Grupo_6
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txtcorreo.Enabled = false;
+            txtcodigo.Enabled = false;
 
         }
 
@@ -231,20 +236,21 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "UPDATE contactos SET nombre=?nombre, codigo=?codigo, clave=?clave, nivel=?nivel, correo=?correo, Where id=" + txtcodigo.Text + "";
-                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
-                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
-                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
-                myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
+                string codigo =txtcodigo.Text.ToString();
+                string nombre =txtusuario.Text.ToString();
+                string clave =txtclave.Text.ToString();
+                string nivel =lstnivel.Text.ToString();
+                string correo =txtcorreo.Text.ToString();
 
+                string MyInsertQuery = "UPDATE contactos SET codigo = '" + codigo + "', nombre = '" + nombre + "' clave = '" + clave + "', nivel = '" + nivel + "' correo = '" + correo + "' WHERE codigo ='" + txtcodigo.Text +"'";
+
+                MySqlCommand myCommand = new MySqlCommand(MyInsertQuery);
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
-                MessageBox.Show("Usuario Actualizado con exito", "Actualizacion completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usuario Actializado con exito", "Actualizacon completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 string consulta = "select * from contactos";
 
@@ -259,6 +265,15 @@ namespace Parcial_1_Grupo_6
             {
                 MessageBox.Show("El usuario no se puede actualizar ", " Actualizacion incompleta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            bmodificar.Visible = true;
+            bactualizar.Visible = false;
+
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+            txtcorreo.Enabled = false;
+            txtcodigo.Enabled = false;
+
         }
     }
 }

@@ -135,7 +135,7 @@ namespace Parcial_1_Grupo_6
                         myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
                     }
                     MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                    string myInsertQuery = "UPDATE agenda2 SET nombre=?nombre,codigo=?codigo, clave=?clave, nivel=?nivel, correo=?correo, Where id=" + txtcodigo.Text + "";
+                    string myInsertQuery = "UPDATE contactos SET nombre=?nombre,codigo=?codigo, clave=?clave, nivel=?nivel, correo=?correo, Where id=" + txtcodigo.Text + "";
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                     myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
                     myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
@@ -149,7 +149,7 @@ namespace Parcial_1_Grupo_6
                     myCommand.Connection.Close();
 
                     string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                    string query = "select * from agenda2";
+                    string query = "select * from contactos";
                     MySqlConnection cnn = new MySqlConnection(cad);
                     MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                     System.Data.DataSet ds = new System.Data.DataSet();
@@ -181,11 +181,11 @@ namespace Parcial_1_Grupo_6
                 myReader = myCommand.ExecuteReader();
                 if (myReader.Read())
                 {
+                    txtcodigo.Text = (myReader.GetString(0));
                     txtusuario.Text = (myReader.GetString(1));
                     txtclave.Text = (myReader.GetString(2));
-                    txtcodigo.Text = (myReader.GetString(3));
+                    txtnivel.Text = (myReader.GetString(3));
                     txtcorreo.Text = (myReader.GetString(4));
-                    txtnivel.Text= (myReader.GetString(5));
                 }
                 else
                 {
@@ -225,7 +225,7 @@ namespace Parcial_1_Grupo_6
                 myCommand.Connection.Close();
 
                 string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                string query = "select * from agenda2";
+                string query = "select * from contactos";
                 MySqlConnection cnn = new MySqlConnection(cad);
                 MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                 System.Data.DataSet ds = new System.Data.DataSet();

@@ -310,6 +310,17 @@ namespace Parcial_1_Grupo_6
             // lstnivel
             // 
             this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.lstnivel.Location = new System.Drawing.Point(278, 116);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);

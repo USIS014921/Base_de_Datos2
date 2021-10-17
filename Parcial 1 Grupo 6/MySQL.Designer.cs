@@ -107,7 +107,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bactualizar.ForeColor = System.Drawing.Color.Black;
-            this.bactualizar.Location = new System.Drawing.Point(195, 236);
+            this.bactualizar.Location = new System.Drawing.Point(195, 197);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(90, 33);
             this.bactualizar.TabIndex = 69;

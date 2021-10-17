@@ -54,7 +54,7 @@ namespace Parcial_1_Grupo_6
             this.txtcorreo = new System.Windows.Forms.TextBox();
             this.lblcodigo = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
-            this.txtnivel = new System.Windows.Forms.TextBox();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -113,6 +113,7 @@ namespace Parcial_1_Grupo_6
             this.bactualizar.TabIndex = 69;
             this.bactualizar.Text = "Actualizar";
             this.bactualizar.UseVisualStyleBackColor = true;
+            this.bactualizar.Click += new System.EventHandler(this.bactualizar_Click);
             // 
             // bmodificar
             // 
@@ -164,7 +165,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bguardar.ForeColor = System.Drawing.Color.Black;
-            this.bguardar.Location = new System.Drawing.Point(3, 236);
+            this.bguardar.Location = new System.Drawing.Point(3, 197);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(90, 33);
             this.bguardar.TabIndex = 64;
@@ -306,12 +307,13 @@ namespace Parcial_1_Grupo_6
             this.txtcodigo.Size = new System.Drawing.Size(100, 20);
             this.txtcodigo.TabIndex = 81;
             // 
-            // txtnivel
+            // lstnivel
             // 
-            this.txtnivel.Location = new System.Drawing.Point(269, 116);
-            this.txtnivel.Name = "txtnivel";
-            this.txtnivel.Size = new System.Drawing.Size(100, 20);
-            this.txtnivel.TabIndex = 82;
+            this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Location = new System.Drawing.Point(269, 112);
+            this.lstnivel.Name = "lstnivel";
+            this.lstnivel.Size = new System.Drawing.Size(100, 21);
+            this.lstnivel.TabIndex = 82;
             // 
             // MySQL
             // 
@@ -319,7 +321,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(942, 314);
-            this.Controls.Add(this.txtnivel);
+            this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.lblcodigo);
             this.Controls.Add(this.txtcorreo);
@@ -379,6 +381,6 @@ namespace Parcial_1_Grupo_6
         private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label lblcodigo;
         private System.Windows.Forms.TextBox txtcodigo;
-        private System.Windows.Forms.TextBox txtnivel;
+        private System.Windows.Forms.ComboBox lstnivel;
     }
 }

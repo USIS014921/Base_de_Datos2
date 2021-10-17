@@ -43,8 +43,8 @@ namespace Parcial_1_Grupo_6
             txtclave.Enabled = false;
             txtcorreo.Enabled = false;
             txtcodigo.Enabled = false;
-            txtnivel.Enabled = false;
-
+            lstnivel.Enabled = false;
+            bguardar.Visible = false;
             try
             {
                 string consulta = "select * from contactos";
@@ -67,14 +67,14 @@ namespace Parcial_1_Grupo_6
             {
                 txtusuario.Enabled = true;
                 txtclave.Enabled = true;
-                txtnivel.Enabled = true;
+                lstnivel.Enabled = true;
                 txtcorreo.Enabled = true;
                 txtcodigo.Enabled = true;
                 txtusuario.Text = "";
                 txtclave.Text = "";
                 txtcorreo.Text = "";
                 txtcodigo.Text = "";
-                txtnivel.Text = "Seleccione nivel";
+                lstnivel.Text = "Seleccione nivel";
                 txtusuario.Focus();
                 bnuevo.Visible = false;
                 bguardar.Visible = true;
@@ -91,7 +91,7 @@ namespace Parcial_1_Grupo_6
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                     myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
                     myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
-                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = txtnivel.Text;
+                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
                     myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
                     myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
 
@@ -121,7 +121,7 @@ namespace Parcial_1_Grupo_6
                 txtclave.Enabled = false;
                 txtcorreo.Enabled = false;
                 txtcodigo.Enabled = false;
-                txtnivel.Enabled = false;
+                lstnivel.Enabled = false;
                 bnuevo.Focus();
             }
         }
@@ -133,7 +133,7 @@ namespace Parcial_1_Grupo_6
                 txtclave.Enabled = true;
                 txtcorreo.Enabled = true;
                 txtcodigo.Enabled = true;
-                txtnivel.Enabled = true; 
+                lstnivel.Enabled = true; 
 
                 try
                 {
@@ -147,7 +147,7 @@ namespace Parcial_1_Grupo_6
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                     myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
                     myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
-                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = txtnivel.Text;
+                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
                     myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
                     myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
 
@@ -193,7 +193,7 @@ namespace Parcial_1_Grupo_6
                     txtcodigo.Text = (myReader.GetString(0));
                     txtusuario.Text = (myReader.GetString(1));
                     txtclave.Text = (myReader.GetString(2));
-                    txtnivel.Text = (myReader.GetString(3));
+                    lstnivel.Text = (myReader.GetString(3));
                     txtcorreo.Text = (myReader.GetString(4));
                 }
                 else
@@ -219,24 +219,21 @@ namespace Parcial_1_Grupo_6
         {
             try
             {
-                string myConnectionString = "";
-                if (myConnectionString == "")
-                {
-                    myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                }
-                MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string myInsertQuery = "DELETE FROM contactos Where codigo =" + txtcodigo + "";
+
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                string myInsertQuery = "DELETE FROM contactos Where codigo =" + txtcodigo.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
+                MessageBox.Show("Usuario eliminado con exito", "Usuario Eliminado",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-                string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                string query = "select * from contactos";
-                MySqlConnection cnn = new MySqlConnection(cad);
-                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                string consulta = "select * from contactos";
+                
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
                 da.Fill(ds, "agenda2");
                 dataGridView1.DataSource = ds;
@@ -246,6 +243,13 @@ namespace Parcial_1_Grupo_6
             {
                 MessageBox.Show("Error al Eliminar el ususario ", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            bnuevo.Visible = true;
+            bguardar.Visible = true;
+
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+
         }
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
@@ -254,6 +258,11 @@ namespace Parcial_1_Grupo_6
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bactualizar_Click(object sender, EventArgs e)
         {
 
         }

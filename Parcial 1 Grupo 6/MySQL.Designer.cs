@@ -266,7 +266,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(465, 30);
+            this.txtbuscar.Location = new System.Drawing.Point(465, 24);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(90, 20);
             this.txtbuscar.TabIndex = 77;

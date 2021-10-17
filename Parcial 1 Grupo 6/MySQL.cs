@@ -45,6 +45,7 @@ namespace Parcial_1_Grupo_6
             txtcodigo.Enabled = false;
             lstnivel.Enabled = false;
             bguardar.Visible = false;
+            bactualizar.Visible = false;
             try
             {
                 string consulta = "select * from contactos";

@@ -229,19 +229,21 @@ namespace Parcial_1_Grupo_6
         {
             try
             {
-
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "UPDATE agenda SET nombre=?nombre, telefono=?telefono Where id=" + id.Text + "";
+                string myInsertQuery = "UPDATE contactos SET nombre=?nombre, codigo=?codigo, clave=?clave, nivel=?nivel, correo=?correo, Where id=" + txtcodigo.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 45).Value = nombre.Text;
-                myCommand.Parameters.Add("?telefono", MySqlDbType.VarChar, 45).Value = telefono.Text;
+                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
+                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
+                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
+                myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
 
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
-                MessageBox.Show("Usuario eliminado con exito", "Usuario Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usuario Actualizado con exito", "Actualizacion completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 string consulta = "select * from contactos";
 
@@ -254,7 +256,7 @@ namespace Parcial_1_Grupo_6
             }
             catch (System.Exception)
             {
-
+                MessageBox.Show("El usuario no se puede actualizar ", " Actualizacion incompleta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

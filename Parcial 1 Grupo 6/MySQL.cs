@@ -41,7 +41,7 @@ namespace Parcial_1_Grupo_6
             txtclave.Enabled = false;
             txtcorreo.Enabled = false;
             txtcodigo.Enabled = false;
-            lstnivel.Enabled = false;
+            txtnivel.Enabled = false;
 
             try
             {
@@ -65,14 +65,14 @@ namespace Parcial_1_Grupo_6
             {
                 txtusuario.Enabled = true;
                 txtclave.Enabled = true;
-                lstnivel.Enabled = true;
+                txtnivel.Enabled = true;
                 txtcorreo.Enabled = true;
                 txtcodigo.Enabled = true;
                 txtusuario.Text = "";
                 txtclave.Text = "";
                 txtcorreo.Text = "";
                 txtcodigo.Text = "";
-                lstnivel.Text = "Seleccione nivel";
+                txtnivel.Text = "Seleccione nivel";
                 txtusuario.Focus();
                 bnuevo.Visible = false;
                 bguardar.Visible = true;
@@ -89,7 +89,7 @@ namespace Parcial_1_Grupo_6
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                     myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
                     myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
-                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
+                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = txtnivel.Text;
                     myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
                     myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
 
@@ -119,7 +119,7 @@ namespace Parcial_1_Grupo_6
                 txtclave.Enabled = false;
                 txtcorreo.Enabled = false;
                 txtcodigo.Enabled = false;
-                lstnivel.Enabled = false;
+                txtnivel.Enabled = false;
                 bnuevo.Focus();
             }
         }
@@ -139,7 +139,7 @@ namespace Parcial_1_Grupo_6
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                     myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 40).Value = txtusuario.Text;
                     myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
-                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = lstnivel.Text;
+                    myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = txtnivel.Text;
                     myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
                     myCommand.Parameters.Add("?codigo", MySqlDbType.Int32, 10).Value = txtcodigo.Text;
 
@@ -174,8 +174,8 @@ namespace Parcial_1_Grupo_6
                     myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
                 }
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string mySelectQuery = "SELECT * From agenda2 Where id=" + txtcodigo.Text + "";
-                MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection);
+                string consulta = "select * from contactos where codigo ='" + Convert.ToInt32(txtbuscar.Text) + "' ";
+                MySqlCommand myCommand = new MySqlCommand(consulta, myConnection);
                 myConnection.Open();
                 MySqlDataReader myReader;
                 myReader = myCommand.ExecuteReader();
@@ -185,7 +185,7 @@ namespace Parcial_1_Grupo_6
                     txtclave.Text = (myReader.GetString(2));
                     txtcodigo.Text = (myReader.GetString(3));
                     txtcorreo.Text = (myReader.GetString(4));
-                    lstnivel.Text = (myReader.GetString(5));
+                    txtnivel.Text= (myReader.GetString(5));
                 }
                 else
                 {
@@ -195,11 +195,10 @@ namespace Parcial_1_Grupo_6
                 myConnection.Close();
             
             }
-            catch (MySqlException D)
+            catch (MySqlException k)
             {
-                MessageBox.Show("Error al Buscar el ususario ", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(k.ToString());
             }
-           
         }
 
         private void txtclave_TextChanged(object sender, EventArgs e)

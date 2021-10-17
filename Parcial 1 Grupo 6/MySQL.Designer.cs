@@ -30,7 +30,6 @@ namespace Parcial_1_Grupo_6
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MySQL));
-            this.lstnivel = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bentrar = new System.Windows.Forms.Button();
             this.bsalir = new System.Windows.Forms.Button();
@@ -55,29 +54,10 @@ namespace Parcial_1_Grupo_6
             this.txtcorreo = new System.Windows.Forms.TextBox();
             this.lblcodigo = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.txtnivel = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lstnivel
-            // 
-            this.lstnivel.Enabled = false;
-            this.lstnivel.FormattingEnabled = true;
-            this.lstnivel.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.lstnivel.Location = new System.Drawing.Point(269, 113);
-            this.lstnivel.Name = "lstnivel";
-            this.lstnivel.Size = new System.Drawing.Size(100, 21);
-            this.lstnivel.TabIndex = 74;
             // 
             // pictureBox1
             // 
@@ -326,12 +306,20 @@ namespace Parcial_1_Grupo_6
             this.txtcodigo.Size = new System.Drawing.Size(100, 20);
             this.txtcodigo.TabIndex = 81;
             // 
+            // txtnivel
+            // 
+            this.txtnivel.Location = new System.Drawing.Point(269, 116);
+            this.txtnivel.Name = "txtnivel";
+            this.txtnivel.Size = new System.Drawing.Size(100, 20);
+            this.txtnivel.TabIndex = 82;
+            // 
             // MySQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(942, 314);
+            this.Controls.Add(this.txtnivel);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.lblcodigo);
             this.Controls.Add(this.txtcorreo);
@@ -339,7 +327,6 @@ namespace Parcial_1_Grupo_6
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bentrar);
             this.Controls.Add(this.bsalir);
@@ -368,8 +355,6 @@ namespace Parcial_1_Grupo_6
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bentrar;
         private System.Windows.Forms.Button bsalir;
@@ -394,5 +379,6 @@ namespace Parcial_1_Grupo_6
         private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label lblcodigo;
         private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.TextBox txtnivel;
     }
 }

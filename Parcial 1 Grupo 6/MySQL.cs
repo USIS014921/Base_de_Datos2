@@ -155,9 +155,10 @@ namespace Parcial_1_Grupo_6
                     myConnection.Open();
                     myCommand.ExecuteNonQuery();
                     myCommand.Connection.Close();
-
                     string cad = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
+                   
                     string query = "select * from contactos";
+                    
                     MySqlConnection cnn = new MySqlConnection(cad);
                     MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                     System.Data.DataSet ds = new System.Data.DataSet();

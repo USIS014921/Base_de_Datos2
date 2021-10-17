@@ -51,9 +51,9 @@ namespace Parcial_1_Grupo_6
                 string consulta = "select * from contactos";
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
-                System.Data.DataSet Joan = new System.Data.DataSet();
-                comando.Fill(Joan, "agenda2");
-                dataGridView1.DataSource = Joan;
+                System.Data.DataSet ds = new System.Data.DataSet();
+                comando.Fill(ds, "agenda2");
+                dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "agenda2";
             }
             catch (MySqlException)

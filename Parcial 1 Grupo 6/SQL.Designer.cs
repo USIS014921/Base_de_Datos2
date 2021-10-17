@@ -248,7 +248,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(397, 282);
             this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.pictureBox1);

@@ -32,6 +32,8 @@ namespace Parcial_1_Grupo_6
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acess));
             this.lstnivel = new System.Windows.Forms.ComboBox();
+            this.sistemaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaDataSet4 = new Parcial_1_Grupo_6.SistemaDataSet4();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bentrar = new System.Windows.Forms.Button();
             this.bsalir = new System.Windows.Forms.Button();
@@ -49,12 +51,10 @@ namespace Parcial_1_Grupo_6
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.sistemaDataSet4 = new Parcial_1_Grupo_6.SistemaDataSet4();
-            this.sistemaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sistemaTableAdapter = new Parcial_1_Grupo_6.SistemaDataSet4TableAdapters.SistemaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lstnivel
@@ -73,6 +73,16 @@ namespace Parcial_1_Grupo_6
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 56;
+            // 
+            // sistemaBindingSource
+            // 
+            this.sistemaBindingSource.DataMember = "Sistema";
+            this.sistemaBindingSource.DataSource = this.sistemaDataSet4;
+            // 
+            // sistemaDataSet4
+            // 
+            this.sistemaDataSet4.DataSetName = "SistemaDataSet4";
+            this.sistemaDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox1
             // 
@@ -266,16 +276,6 @@ namespace Parcial_1_Grupo_6
             this.label2.TabIndex = 39;
             this.label2.Text = "Usuario";
             // 
-            // sistemaDataSet4
-            // 
-            this.sistemaDataSet4.DataSetName = "SistemaDataSet4";
-            this.sistemaDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sistemaBindingSource
-            // 
-            this.sistemaBindingSource.DataMember = "Sistema";
-            this.sistemaBindingSource.DataSource = this.sistemaDataSet4;
-            // 
             // sistemaTableAdapter
             // 
             this.sistemaTableAdapter.ClearBeforeFill = true;
@@ -284,7 +284,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(411, 289);
             this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.pictureBox1);
@@ -308,9 +308,9 @@ namespace Parcial_1_Grupo_6
             this.Name = "Acess";
             this.Text = "Acess";
             this.Load += new System.EventHandler(this.Acess_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -164,6 +164,7 @@ namespace Parcial_1_Grupo_6
                 }
                 else
                 {
+                    MessageBox.Show("El usuario no existe", "OK",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                 }
                 myReader.Close();
@@ -172,8 +173,18 @@ namespace Parcial_1_Grupo_6
             }
             catch (MySqlException k)
             {
-                MessageBox.Show(k.ToString());
+                MessageBox.Show("Campo de busqueda esta vasio", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            bnuevo.Visible = true;
+            bguardar.Visible = false;
+
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+            txtcorreo.Enabled = false;
+            txtcodigo.Enabled = false;
+            bmodificar.Focus();
         }
 
         private void txtclave_TextChanged(object sender, EventArgs e)

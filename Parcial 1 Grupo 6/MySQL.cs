@@ -17,6 +17,7 @@ namespace Parcial_1_Grupo_6
         public string cadena_conexion = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
         private object myConnection;
         private object myCommand;
+        public string usuario_modificar;
 
         public MySQL()
         {
@@ -134,8 +135,10 @@ namespace Parcial_1_Grupo_6
             txtcorreo.Enabled = true;
             txtcodigo.Enabled = true;
             txtusuario.Focus();
+
             bmodificar.Visible = false;
             bactualizar.Visible = true;
+            usuario_modificar = txtusuario.Text.ToString();
             
         }
 
@@ -246,14 +249,13 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                
                 string codigo =txtcodigo.Text.ToString();
                 string nombre =txtusuario.Text.ToString();
                 string clave =txtclave.Text.ToString();
                 string nivel =lstnivel.Text.ToString();
                 string correo =txtcorreo.Text.ToString();
 
-                string MyInsertQuery = "UPDATE contactos SET codigo = '" + codigo + "', nombre = '" + nombre + "' clave = '" + clave + "', nivel = '" + nivel + "' correo = '" + correo + "' WHERE codigo ='" + txtcodigo.Text +"'";
+                string MyInsertQuery = "UPDATE contactos SET codigo = '" + codigo + "', nombre = '" + nombre + "' clave = '" + clave + "', nivel = '" + nivel + "' correo = '" + correo + "' WHERE codigo ='" + usuario_modificar+"'";
 
                 MySqlCommand myCommand = new MySqlCommand(MyInsertQuery);
 
@@ -284,6 +286,7 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txtcorreo.Enabled = false;
             txtcodigo.Enabled = false;
+            bmodificar.Focus();
 
         }
     }

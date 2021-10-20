@@ -146,11 +146,6 @@ namespace Parcial_1_Grupo_6
         {
             try
             {
-                string myConnectionString = "";
-                if (myConnectionString == "")
-                {
-                    myConnectionString = "Database=agenda2;Data Source=localhost;User Id=Joan;Password=12902";
-                }
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
                 string consulta = "select * from contactos where codigo ='" + Convert.ToInt32(txtbuscar.Text) + "' ";
                 MySqlCommand myCommand = new MySqlCommand(consulta, myConnection);

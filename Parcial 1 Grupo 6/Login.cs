@@ -38,7 +38,7 @@ namespace Parcial_1_Grupo_6
             if (txtusuario.Text == usuario1 || txtclave.Text == clave1)
             {
              
-                Dentro Form1 = new Dentro();
+                Inicio Form1 = new Inicio();
                 Form1.Show();
                 this.Hide();
                 
@@ -83,8 +83,8 @@ namespace Parcial_1_Grupo_6
         private void button1_Click_1(object sender, EventArgs e)
         {
 
-            MySqlX mysqlx = new MySqlX();
-            mysqlx.Show();
+            Form1 form1 = new Form1();
+            form1.Show();
             this.Hide();
         }
 

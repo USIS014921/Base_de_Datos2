@@ -1,7 +1,7 @@
 ﻿
 namespace Parcial_1_Grupo_6
 {
-    partial class Dentro
+    partial class Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace Parcial_1_Grupo_6
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dentro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.resistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verOfertasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -163,7 +163,7 @@ namespace Parcial_1_Grupo_6
             this.label1.Text = "Electronic Components: Somos lo mejores en distribucion de componentes electronic" +
     "os.";
             // 
-            // Dentro
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,7 +173,7 @@ namespace Parcial_1_Grupo_6
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Dentro";
+            this.Name = "Inicio";
             this.Text = "Electronic Components";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.menuStrip1.ResumeLayout(false);

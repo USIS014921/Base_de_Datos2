@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parcial_1_Grupo_6
 {
-    public partial class Dentro : Form
+    public partial class Inicio : Form
     {
-        public Dentro()
+        public Inicio()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parcial_1_Grupo_6
 {
-    public partial class Form1 : Form
+    public partial class Dentro : Form
     {
-        public Form1()
+        public Dentro()
         {
             InitializeComponent();
         }
@@ -120,6 +120,11 @@ namespace Parcial_1_Grupo_6
         {
             Transistores Transistores = new Transistores();
             Transistores.ShowDialog();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

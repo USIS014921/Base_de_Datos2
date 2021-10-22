@@ -21,5 +21,10 @@ namespace Parcial_1_Grupo_6
         {
 
         }
+
+        private void bentrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

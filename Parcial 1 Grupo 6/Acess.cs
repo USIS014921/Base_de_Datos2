@@ -142,7 +142,7 @@ namespace Parcial_1_Grupo_6
                 {
                     if ((txtusuario.Text == registro["usuario"].ToString()) && (txtclave.Text == registro["contraseña"].ToString()))
                     {
-                        Form1 form1 = new Form1();
+                        Dentro form1 = new Dentro();
                         form1.Show();
                         this.Hide();
                     }

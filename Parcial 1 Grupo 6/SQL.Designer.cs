@@ -86,6 +86,7 @@ namespace Parcial_1_Grupo_6
             this.bentrar.TabIndex = 72;
             this.bentrar.Text = "Entrar";
             this.bentrar.UseVisualStyleBackColor = true;
+            this.bentrar.Click += new System.EventHandler(this.bentrar_Click);
             // 
             // bsalir
             // 

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using Segundo_Parcial;
 
 namespace Parcial_1_Grupo_6
 {
@@ -35,7 +38,7 @@ namespace Parcial_1_Grupo_6
             if (txtusuario.Text == usuario1 || txtclave.Text == clave1)
             {
              
-                Form1 Form1 = new Form1();
+                Dentro Form1 = new Dentro();
                 Form1.Show();
                 this.Hide();
                 
@@ -79,8 +82,9 @@ namespace Parcial_1_Grupo_6
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MySQL mysql = new MySQL();
-            mysql.Show();
+
+            MySqlX mysqlx = new MySqlX();
+            mysqlx.Show();
             this.Hide();
         }
 

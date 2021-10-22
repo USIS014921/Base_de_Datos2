@@ -94,11 +94,11 @@
     <Compile Include="Circuitos Integrados.Designer.cs">
       <DependentUpon>Circuitos Integrados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -106,11 +106,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MySQL.cs">
+    <Compile Include="MySqlX.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MySQL.Designer.cs">
-      <DependentUpon>MySQL.cs</DependentUpon>
+    <Compile Include="MySqlX.Designer.cs">
+      <DependentUpon>MySqlX.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,14 +172,14 @@
     <EmbeddedResource Include="Circuitos Integrados.resx">
       <DependentUpon>Circuitos Integrados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MySQL.resx">
-      <DependentUpon>MySQL.cs</DependentUpon>
+    <EmbeddedResource Include="MySqlX.resx">
+      <DependentUpon>MySqlX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
